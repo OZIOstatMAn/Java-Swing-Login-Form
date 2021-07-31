@@ -1,3 +1,4 @@
+import java.awt.Color;
 import java.awt.Component;
 import java.awt.Font;
 
@@ -32,10 +33,10 @@ public class WelcomeWindow extends App {
         );
         comboBox.setBounds(10,50,100,25);
 
-        panel.add(comboBox);
+        panel.add(comboBox);*/
 
         panel = new JPanel();
-        panel.setLayout(null);*/
+        panel.setLayout(null);
 
         frame = new JFrame("Welcome Page");
         frame.setSize(400, 250);
@@ -43,8 +44,9 @@ public class WelcomeWindow extends App {
         frame.setVisible(true);
         frame.add(panel);
 
-        WelcomeLabel = new JLabel("HELLO, " + UsernamePane.toUpperCase() + ". %s\nTHANK YOU FOR USING MY GUI", JLabel.CENTER);
+        WelcomeLabel = new JLabel("HELLO, " + UsernamePane.toUpperCase() + ". \nTHANK YOU FOR USING MY GUI", JLabel.CENTER);
         WelcomeLabel.setSize(80, 25);
+        WelcomeLabel.setForeground(Color.YELLOW.darker());
         WelcomeLabel.setAlignmentX(Component.TOP_ALIGNMENT);
         WelcomeLabel.setAlignmentY(Component.CENTER_ALIGNMENT);
         WelcomeLabel.setFont(new Font(null, Font.ITALIC, 20));

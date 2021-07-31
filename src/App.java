@@ -91,9 +91,9 @@ public class App {
                                 case "":
                                 JOptionPane.showMessageDialog(frame, "Please Enter Your Name", "ERROR", JOptionPane.ERROR);
                             }
-                        new WelcomeWindow();
+                            
                         frame.dispose();
-                        }
+                        new WelcomeWindow();                        }
                         else if (User.isEmpty() || PassStr.isEmpty()) {
                             JOptionPane.showMessageDialog(frame, "Please fill in the empty field(s)😡", "ERROR", JOptionPane.ERROR_MESSAGE);
                         } 
